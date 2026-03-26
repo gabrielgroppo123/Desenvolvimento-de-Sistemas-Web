@@ -1,6 +1,8 @@
-import calculadoraController from './controller/calculadoraController.js'
-import produtoController from './controller/produtoController.js'
+import obraController from "./controller/obraController.js"
+import clienteController from "./controller/clienteController.js"
+import emprestimoController from "./controller/emprestimoController.js"
 export default function adicionarRotas(api){
-    api.use(calculadoraController);
-    api.use(produtoController);
+    api.use(obraController);
+    api.use(clienteController);
+    api.use(emprestimoController);
 }
